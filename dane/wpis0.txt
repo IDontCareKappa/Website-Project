@@ -1,0 +1,27 @@
+<div>
+	<div class="card-body">
+		<h2 class="card-title text-primary">Arduino UNO</h2>
+		<p class="card-text">Moduł Arduino UNO z mikrokontrolerem AVR ATmega328. Wyposażony w 32kB pamięci Flash, 2kB RAM, 
+		14 cyfrowych wejść/wyjść. Arduino UNO to obecnie najpopularniejsza płytka do nauki elektroniki i programowania
+		Dzięki temu modułowi praktycznie każdy może zacząć budować ciekawe, programowalne urządzenia elektroniczne.
+		Głównym założeniem autorów było udostępnienie małego i taniego zestawu uruchomieniowego, 
+		który na swoim pokładzie będzie zawierał niezbędne minimum do nauki programowania. 
+		Płytka ta powstała jako pomoc dydaktyczna dla włoskich studentów, szybko stała się jednak międzynarodowym hitem, 
+		który używany jest obecnie przez miliony osób z całego świata</p>
+		<img class="card-img-top" src="./assets/Products/Arduino_UNO.jpg" alt="..." />
+		<h3 class="card-title text-center text-primary mt-5">Specyfikacja</h3>
+        <div class="list-group">
+            <p class="list-group-item text-white" style="background-color:#5f6973">Napięcie zasilania: od 7V do 12V</p>
+            <p class="list-group-item text-white" style="background-color:#5f6973">Mikrokontroler: ATmega328</p>
+            <p class="list-group-item text-white" style="background-color:#5f6973">Porty I/O: 14</p>
+			<p class="list-group-item text-white" style="background-color:#5f6973">Wyjścia PWM: 6</p>
+			<p class="list-group-item text-white" style="background-color:#5f6973">Wejścia analogowe: 6</p>
+			<p class="list-group-item text-white" style="background-color:#5f6973">Interfejsy szeregowe: UART, SPI, I2C</p>
+			<p class="list-group-item text-white" style="background-color:#5f6973">Zewnętrzne przerwania</p>
+			<p class="list-group-item text-white" style="background-color:#5f6973">Gniazdo USB A do programowania</p>
+        </div>
+	</div>
+	<div class="card-footer"><a class="btn btn-primary btn-sm w-100"
+		href="./wpisy.html">Pokaż wszystkie wpisy</a>
+	</div>
+</div>

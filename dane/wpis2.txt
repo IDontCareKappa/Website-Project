@@ -1,0 +1,27 @@
+<div>
+	<div class="card-body">
+		<h2 class="card-title text-primary">Arduino Mega</h2>
+		<p class="card-text">Popularny moduł z mikrokontrolerem AVR ATmega2560. 
+		Wyposażony w 256 kB pamięci Flash, 8 kB RAM, 54 cyfrowych wejść/wyjśći 
+		16 wejść analogowych. Arduino Mega jest z jedną z najbogatszych wersji.
+		Płytka zawiera mikrokontroler ATmega2560, wyposażony w 54 cyfrowych wejść/wyjść 
+		z czego 15 można wykorzystać jako wyjścia PWM (np. do sterowania silnikami) 
+		oraz 16 analogowych wejść. </p>
+		<img class="card-img-top" src="./assets/Products/Aarduino_Mega.jpg" alt="..." />
+		<h3 class="card-title text-center text-primary mt-5">Specyfikacja</h3>
+        <div class="list-group">
+            <p class="list-group-item text-white" style="background-color:#5f6973">Napięcie zasilania: od 7V do 12V</p>
+            <p class="list-group-item text-white" style="background-color:#5f6973">Mikrokontroler: ATmega 2560</p>
+            <p class="list-group-item text-white" style="background-color:#5f6973">Porty I/O: 54</p>
+			<p class="list-group-item text-white" style="background-color:#5f6973">Wyjścia PWM: 15</p>
+			<p class="list-group-item text-white" style="background-color:#5f6973">Wejścia analogowe: 16</p>
+			<p class="list-group-item text-white" style="background-color:#5f6973">Interfejsy szeregowe: 4xUART, SPI, I2C</p>
+			<p class="list-group-item text-white" style="background-color:#5f6973">Zewnętrzne przerwania</p>
+			<p class="list-group-item text-white" style="background-color:#5f6973">Gniazdo USB A do programowania</p>
+			<p class="list-group-item text-white" style="background-color:#5f6973">Złącze DC 5,5 x 2,1 mm do zasilania</p>
+        </div>
+	</div>
+	<div class="card-footer"><a class="btn btn-primary btn-sm w-100"
+		href="./wpisy.html">Pokaż wszystkie wpisy</a>
+	</div>
+</div>

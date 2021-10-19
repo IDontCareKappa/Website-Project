@@ -1,0 +1,25 @@
+<div>
+	<div class="card-body">
+		<h2 class="card-title text-primary">Czujnik wilgotności gleby</h2>
+		<p class="card-text">Czujnik służący do wyznaczania poziomu wilgotności gleby. 
+		Zasilany jest napięciem od 3,3 V do 5 V. Posiada wyjście cyfrowe oraz analogowe, 
+		co czyni go kompatybilnym z większością modułów uruchomieniowych w tym Arduino.
+		Urządzenie składa się z trzech części: sondy pomiarowej, modułu detektora oraz przewodów. 
+		Sondy należy połączyć z modułem głównym przy pomocy przewodów i umieścić w glebie, której 
+		wilgotność będzie mierzona. Czujnik posiada wyjście cyfrowe D0 sygnalizujące przekroczenie 
+		ustawionej za pomocą potencjometru wartości oraz analogowe A0 przy pomocy którego uzyskuje 
+		się dokładną wartość wilgotności. </p>
+		<img class="card-img-top" src="./assets/Products/Czujnik_wilgoci.jpg" alt="..." />
+		<h3 class="card-title text-center text-primary mt-5">Specyfikacja</h3>
+        <div class="list-group">
+            <p class="list-group-item text-white" style="background-color:#5f6973">Napięcie zasilania: od 3,3V do 5V</p>
+            <p class="list-group-item text-white" style="background-color:#5f6973">Sygnalizacja zasilania</p>
+            <p class="list-group-item text-white" style="background-color:#5f6973">Sygnalizacja LED stanu wyjścia cyfrowego</p>
+			<p class="list-group-item text-white" style="background-color:#5f6973">Wyjście analogowe</p>
+			<p class="list-group-item text-white" style="background-color:#5f6973">Regulacja czułości potencjometrem</p>
+        </div>
+	</div>
+	<div class="card-footer"><a class="btn btn-primary btn-sm w-100"
+		href="./wpisy.html">Pokaż wszystkie wpisy</a>
+	</div>
+</div>

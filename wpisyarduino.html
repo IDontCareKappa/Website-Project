@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Circuit Blog - Wpisy</title>
+    <title>Circuit Shop</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="./assets/arduinoicon.ico" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 
-<body>
+<body onload="addListenerArduino()">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
@@ -100,7 +100,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="card h-100" id="wpisy">
-                            <div class="border border-2 border-primary rounded">
+                            <div class="border border-2 border-primary rounded py-5">
                                 <div class="card-body">
                                     <h4 class="card-title"><a href="#!">Arduino UNO</a></h4>
                                     <p class="card-text">Moduł Arduino UNO z mikrokontrolerem AVR ATmega328. Wyposażony
@@ -111,7 +111,7 @@
                                         id="b0">Zobacz Wpis</a>
                                 </div>
                             </div>
-                            <div class="border border-2 border-primary rounded">
+                            <div class="border border-2 border-primary rounded py-5">
                                 <div class="card-body">
                                     <h4 class="card-title"><a href="#!">Arduino Nano</a></h4>
                                     <p class="card-text">Moduł Arduino Nano z mikrokontrolerem AVR ATmega328. Wyposażony
@@ -122,7 +122,7 @@
                                     id="b1">Zobacz Wpis</a>
                                 </div>
                             </div>
-                            <div class="border border-2 border-primary rounded">
+                            <div class="border border-2 border-primary rounded py-5">
                                 <div class="card-body">
                                     <h4 class="card-title"><a href="#!">Arduino Mega</a></h4>
                                     <p class="card-text">Popularny moduł z mikrokontrolerem AVR ATmega2560. Wyposażony w
@@ -131,40 +131,6 @@
                                 </div>
                                 <div class="card-footer"><a class="btn btn-primary btn-sm w-100"
                                     id="b2">Zobacz Wpis</a>
-                                </div>
-                            </div>
-                            <div class="border border-2 border-primary rounded">
-                                <div class="card-body">
-                                    <h4 class="card-title"><a href="#!">Czujnik temperatury i ciśnienia GY-68 BMP180</a>
-                                    </h4>
-                                    <p class="card-text">BMP180 to cyfrowy pomiar ciśnienia i temperatury. Układ służy
-                                        do pomiaru ciśnienia bezwzględnego oraz temperatury.</p>
-                                </div>
-                                <div class="card-footer"><a class="btn btn-primary btn-sm w-100"
-                                    id="b3">Zobacz Wpis</a>
-                                </div>
-                            </div>
-                            <div class="border border-2 border-primary rounded">
-                                <div class="card-body">
-                                    <h4 class="card-title"><a href="#!">Czujnik płomieni Waveshare 9521</a></h4>
-                                    <p class="card-text">Czujnik służący do wykrywania ognia. Zasilany jest napięciem od
-                                        3,3 V do 5,3 V. Zakres wykrywanej fali: od 760 nm do 1100 nm. Wyjściem jest
-                                        napięcie analogowe oraz sygnał cyfowy.</p>
-                                </div>
-                                <div class="card-footer"><a class="btn btn-primary btn-sm w-100"
-                                    id="b4">Zobacz Wpis</a>
-                                </div>
-                            </div>
-                            <div class="border border-2 border-primary rounded">
-                                <div class="card-body">
-                                    <h4 class="card-title"><a href="#!">Czujnik wilgotności gleby</a></h4>
-                                    <p class="card-text">Czujnik służący do wyznaczania poziomu wilgotności gleby.
-                                        Zasilany jest napięciem od 3,3 V do 5 V. Posiada wyjście cyfrowe oraz analogowe,
-                                        co czyni go kompatybilnym z większością modułów uruchomieniowych w tym Arduino.
-                                    </p>
-                                </div>
-                                <div class="card-footer"><a class="btn btn-primary btn-sm w-100"
-                                    id="b5">Zobacz Wpis</a>
                                 </div>
                             </div>
                         </div>
@@ -183,7 +149,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
     <script src="./js/category.js"></script>
 </body>
 

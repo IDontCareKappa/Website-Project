@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Circuit Blog - Kontakt</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="./assets/arduinoicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+
+    <style>
+        #mapid {
+            height: 75%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">Circuit Blog - Baza wiedzy o Arduino</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Strona Główna</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./wpisy.html">Wpisy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pomoc.html">Pomoc</a></li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./pomoc.html">
+                            Kontakt
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Content-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 mb-5">
+                <div class="card h-100 my-4">
+                    <div class="card-body">
+                        <h2 class="card-title text-center text-primary">Kategorie</h2>
+                        <div class="list-group">
+                            <a class="list-group-item text-white"
+                                href="./wpisyarduino.html"
+                                style="background-color:#5f6973">Arduino</a>
+                            <a class="list-group-item text-white" href="./wpisyczujniki.html"
+                                style="background-color:#5f6973">Czujniki</a>
+                        </div>
+                        <div class="carousel slide mt-5" id="carouselExampleIndicators" data-ride="carousel">
+                            <ol class="carousel-indicators mb-4">
+                                <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <h5 class="text-center">Polecany produkt</h5>
+                                    <img class="img-fluid" src="./assets/Products/Arduino_aside.png" alt="">
+                                    <p class="text-center">Arduino Nano</p>
+                                    <div class="text-center"><a class="btn btn-primary btn-sm"
+                                            href="https://botland.com.pl/arduino-seria-nano-oryginalne-plytki/12960-arduino-nano-a000005-7630049200173.html">Sprawdź
+                                            cenę</a></div>
+                                </div>
+                                <div class="carousel-item">
+                                    <h5 class="text-center">Polecane środowisko</h5>
+                                    <img class="img-fluid" src="./assets/Arduino-IDE.png" alt="">
+                                    <p class="text-center">Arduino IDE</p>
+                                    <div class="text-center"><a class="btn btn-primary btn-sm"
+                                            href="https://www.arduino.cc/en/software">Sprawdź IDE</a></div>
+                                </div>
+                                <div class="carousel-item">
+                                    <h5 class="text-center">Polecany sklep</h5>
+                                    <img class="img-fluid" src="./assets/Bootland.png" alt="">
+                                    <p class="text-center">Bootland</p>
+                                    <div class="text-center"><a class="btn btn-primary btn-sm"
+                                            href="https://botland.com.pl">Sprawdź ofertę</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="card-title text-center text-primary mt-5">Linki</h2>
+                        <div class="list-group text-center">
+                            <a class="list-group-item text-light"
+                                href="https://github.com"
+                                style="background-color:#5f6973"><img src="./assets/icons/github.png" alt="github">Github</a>
+                            <a class="list-group-item text-white" href="https://www.facebook.com"
+                                style="background-color:#5f6973"><img src="./assets/icons/facebook.png" alt="github">Facebook</a>
+                            <a class="list-group-item text-white" href="https://www.instagram.com"
+                                style="background-color:#5f6973"><img src="./assets/icons/instagram.png" alt="github">Instagram</a>
+                            <a class="list-group-item text-white" href="https://twitter.com"
+                                style="background-color:#5f6973"><img src="./assets/icons/twitter.png" alt="github">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 my-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title text-primary text-center">Lokalizacja</h2>
+                        <div id='mapid' style='width: 100%; height: 500px;'></div>
+                        <div class="card-text text-center">
+                            <h2 class="card-title text-primary">Adres</h2>
+                            <p class="h5">Nadbystrzycka 38A, 20-618 Lublin</p>
+                            <h2 class="card-title text-primary">Telefon</h2>
+                            <p class="h5">+48 678 997 123</p>
+                            <h2 class="card-title text-primary">Godziny otwarcia</h2>
+                            <p class="h5">Poniedziałek - sobota</p>
+                            <p class="h5">08:00-16:00</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Map-->
+    <script>
+        var map = L.map('mapid').setView([51.23689329188827, 22.548873104868907], 17);
+
+        var marker = L.marker([51.236943763438, 22.548864147934843]).addTo(map);
+        marker.bindPopup("Tutaj znajduje się nasze biuro").openPopup();
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright%22%3EOpenStreetMap</a> contributors'
+        }).addTo(map);
+    </script>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Tomasz Ostrowski</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

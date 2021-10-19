@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Circuit Shop</title>
+    <title>Circuit Blog</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./assets/arduinoicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <script src="./js/category.js"></script>
 </head>
 
 <body>
@@ -39,130 +40,166 @@
     <!-- Page Content-->
     <div class="container">
         <div class="row">
-            <div class="col-lg-3">
-                <div class="card my-4">
+            <div class="col-lg-3 mb-5">
+                <div class="card h-100 my-4">
                     <div class="card-body">
-                        <h2 class="card-title text-center"><a href="#!">Kategorie</a></h2>
+                        <h2 class="card-title text-center text-primary">Kategorie</h2>
                         <div class="list-group">
-                            <a class="list-group-item text-white" href="#!" style="background-color:#5f6973">Arduino</a>
-                            <a class="list-group-item text-white" href="#!" style="background-color:#5f6973">Czujniki</a>
-                            <a class="list-group-item text-white" href="#!" style="background-color:#5f6973">Przewody</a>
+                            <a class="list-group-item text-white"
+                                href="./wpisyarduino.html"
+                                style="background-color:#5f6973">Arduino</a>
+                            <a class="list-group-item text-white" href="./wpisyczujniki.html"
+                                style="background-color:#5f6973">Czujniki</a>
+                        </div>
+                        <div class="carousel slide mt-5" id="carouselExampleIndicators" data-ride="carousel">
+                            <ol class="carousel-indicators mb-4">
+                                <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <h5 class="text-center">Polecany produkt</h5>
+                                    <img class="img-fluid" src="./assets/Products/Arduino_aside.png" alt="">
+                                    <p class="text-center">Arduino Nano</p>
+                                    <div class="text-center"><a class="btn btn-primary btn-sm"
+                                            href="https://botland.com.pl/arduino-seria-nano-oryginalne-plytki/12960-arduino-nano-a000005-7630049200173.html">Sprawdź
+                                            cenę</a></div>
+                                </div>
+                                <div class="carousel-item">
+                                    <h5 class="text-center">Polecane środowisko</h5>
+                                    <img class="img-fluid" src="./assets/Arduino-IDE.png" alt="">
+                                    <p class="text-center">Arduino IDE</p>
+                                    <div class="text-center"><a class="btn btn-primary btn-sm"
+                                            href="https://www.arduino.cc/en/software">Sprawdź IDE</a></div>
+                                </div>
+                                <div class="carousel-item">
+                                    <h5 class="text-center">Polecany sklep</h5>
+                                    <img class="img-fluid" src="./assets/Bootland.png" alt="">
+                                    <p class="text-center">Bootland</p>
+                                    <div class="text-center"><a class="btn btn-primary btn-sm"
+                                            href="https://botland.com.pl">Sprawdź ofertę</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="card-title text-center text-primary mt-5">Linki</h2>
+                        <div class="list-group text-center">
+                            <a class="list-group-item text-light"
+                                href="https://github.com"
+                                style="background-color:#5f6973"><img src="./assets/icons/github.png" alt="github">Github</a>
+                            <a class="list-group-item text-white" href="https://www.facebook.com"
+                                style="background-color:#5f6973"><img src="./assets/icons/facebook.png" alt="github">Facebook</a>
+                            <a class="list-group-item text-white" href="https://www.instagram.com"
+                                style="background-color:#5f6973"><img src="./assets/icons/instagram.png" alt="github">Instagram</a>
+                            <a class="list-group-item text-white" href="https://twitter.com"
+                                style="background-color:#5f6973"><img src="./assets/icons/twitter.png" alt="github">Twitter</a>
                         </div>
                     </div>
-
                 </div>
-
             </div>
+
             <div class="col-lg-9">
-                <div class="carousel slide my-4" id="carouselExampleIndicators" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active"><img class="d-block img-fluid" src="./assets/arduino_uno.jpg"
-                                alt="First slide" /></div>
-                        <div class="carousel-item"><img class="d-block img-fluid"
-                                src="./assets/Arduino_UNO_pinout_2.png" alt="Second slide" /></div>
-                        <div class="carousel-item"><img class="d-block img-fluid" src="./assets/czujnik.jpg"
-                                alt="Third slide" /></div>
+                <div class="bd-example my-4">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/arduino_uno.jpg" class="d-block w-100" alt="Arduino Uno">
+                                <div class="carousel-caption d-none d-md-block text-light"
+                                    style="background-color:rgba(0, 0, 0, 0.5);">
+                                    <h5>Baza wiedzy</h5>
+                                    <p>Na tej stronie znajdziesz wszystko o mikrokontrolerach Arduino.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/Arduino_UNO_pinout_2.png" class="d-block w-100" alt="Arduino Uno Pinout">
+                                <div class="carousel-caption d-none d-md-block"
+                                    style="background-color:rgba(0, 0, 0, 0.5);">
+                                    <h5>Potrzebujesz pomocy?</h5>
+                                    <p>Napisz do nas w zakładce pomoc.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/czujnik.jpg" class="d-block w-100" alt="Czujnik">
+                                <div class="carousel-caption d-none d-md-block"
+                                    style="background-color:rgba(0, 0, 0, 0.5);">
+                                    <h5>Moduły do Arduino</h5>
+                                    <p>Oprócz samych mikrokontrolerów, znajdziesz tu także wiele czujników.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
                 </div>
                 <div class="row">
+                    <div class="col-lg-12 mb-4">
+                        <div class="card h-100 p-3">
+                            <h3 class="card-title text-center text-primary">Witaj na Circuit Blog!</h3>
+                            <p class="card-text lead">Na naszym blogu znajdziesz wszystko czego potrzebujesz do rozpoczęcia
+                                zabawy z elektroniką i programowaniem. Począwszy od opisu poszczególnych modułów i
+                                czujników, a kończywszy na programowaniu i kabelkologii. Jesteśmy otwarci na kontakt z
+                                ludźmi, w zakładce Pomoc znajdziesz formularz, w którym możesz opisać nam na jaki
+                                problem natknąłeś się w swojej przygodzie z Arduino. Jeżeli chciałbyś odwiedzić nasze
+                                biuro, zajrzyj do zakładki kontakt, znajdziesz tam wszystkie potrzebne informacje.</p>
+                        </div>
+                    </div>
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="#!"><img class="card-img-top" src="./assets/Products/Arduino_UNO.jpg"
-                                    alt="..." /></a>
+                            <div class="bg-image">
+                                <img src="./assets/Products/Arduino_UNO.jpg" class="w-100" alt="Arduino Uno"/>
+                            </div>
+
                             <div class="card-body">
-                                <h4 class="card-title"><a href="#!">Arduino UNO</a></h4>
+                                <h4 class="card-title"><a
+                                        href="https://botland.com.pl/arduino-moduly-glowne/1060-arduino-uno-rev3-a000066-8058333490090.html">Arduino
+                                        UNO</a></h4>
                                 <p class="card-text">Moduł Arduino UNO z mikrokontrolerem AVR ATmega328. Wyposażony w
                                     32kB pamięci Flash, 2kB RAM, 14 cyfrowych wejść/wyjść.</p>
                             </div>
-                            <div class="card-footer"><a class="btn btn-primary btn-sm"
-                                    href="https://www.w3schools.com/html/">Zobacz</a>
+                            <div class="card-footer"><a class="btn btn-primary btn-sm" href="./wpisy.html">Zobacz</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="#!"><img class="card-img-top" src="./assets/Products/Arduino_nano.jpg"
-                                    alt="..." /></a>
+                            <img class="card-img-top view overlay zoom" src="./assets/Products/Arduino_nano.jpg"
+                                alt="Arduino Nano" />
                             <div class="card-body">
-                                <h4 class="card-title"><a href="#!">Arduino Nano</a></h4>
+                                <h4 class="card-title"><a
+                                        href="https://botland.com.pl/arduino-seria-nano-oryginalne-plytki/12960-arduino-nano-a000005-7630049200173.html">Arduino
+                                        Nano</a></h4>
                                 <p class="card-text">Moduł Arduino Nano z mikrokontrolerem AVR ATmega328. Wyposażony w
                                     32kB pamięci Flash, 2kB RAM, 22 cyfrowe wejścia/wyjścia. Charakteryzuje się
                                     niewielkim rozmiarem.</p>
                             </div>
-                            <div class="card-footer"><a class="btn btn-primary btn-sm"
-                                    href="https://www.w3schools.com/html/">Zobacz</a>
+                            <div class="card-footer"><a class="btn btn-primary btn-sm" href="./wpisy.html">Zobacz</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="#!"><img class="card-img-top" src="./assets/Products/Aarduino_Mega.jpg"
-                                    alt="..." /></a>
+                            <img class="card-img-top" src="./assets/Products/Aarduino_Mega.jpg" alt="Arduino Mega" />
                             <div class="card-body">
-                                <h4 class="card-title"><a href="#!">Arduino Mega</a></h4>
+                                <h4 class="card-title"><a
+                                        href="https://botland.com.pl/arduino-moduly-glowne/1062-arduino-mega-2560-rev3-a000067-7630049200067.html?gclid=Cj0KCQjw7pKFBhDUARIsAFUoMDani044-Ovkeg0zse5c9atcY6hD1Yl55D0igJWzs6Qjs5KL3Twx6O0aAkQREALw_wcB&sskey=ebbef7cd5c0242499630b6532253c103">Arduino
+                                        Mega</a></h4>
                                 <p class="card-text">Popularny moduł z mikrokontrolerem AVR ATmega2560. Wyposażony w 256
                                     kB pamięci Flash, 8 kB RAM, 54 cyfrowych wejść/wyjśći 16 wejść analogowych</p>
                             </div>
-                            <div class="card-footer"><a class="btn btn-primary btn-sm"
-                                    href="https://www.w3schools.com/html/">Zobacz</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <a href="#!"><img class="card-img-top" src="./assets/Products/Czujnik_temp.jpg"
-                                    alt="..." /></a>
-                            <div class="card-body">
-                                <h4 class="card-title"><a href="#!">Czujnik temperatury i ciśnienia GY-68 BMP180</a>
-                                </h4>
-                                <p class="card-text">BMP180 to cyfrowy pomiar ciśnienia i temperatury. Układ służy do
-                                    pomiaru ciśnienia bezwzględnego oraz temperatury.</p>
-                            </div>
-                            <div class="card-footer"><a class="btn btn-primary btn-sm"
-                                    href="https://www.w3schools.com/html/">Zobacz</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <a href="#!"><img class="card-img-top" src="./assets/Products/Czujnik_ognia.jpg"
-                                    alt="..." /></a>
-                            <div class="card-body">
-                                <h4 class="card-title"><a href="#!">Czujnik płomieni Waveshare 9521</a></h4>
-                                <p class="card-text">Czujnik służący do wykrywania ognia. Zasilany jest napięciem od 3,3
-                                    V do 5,3 V. Zakres wykrywanej fali: od 760 nm do 1100 nm. Wyjściem jest napięcie
-                                    analogowe oraz sygnał cyfowy.</p>
-                            </div>
-                            <div class="card-footer"><a class="btn btn-primary btn-sm"
-                                    href="https://www.w3schools.com/html/">Zobacz</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <a href="#!"><img class="card-img-top" src="./assets/Products/Czujnik_wilgoci.jpg"
-                                    alt="..." /></a>
-                            <div class="card-body">
-                                <h4 class="card-title"><a href="#!">Czujnik wilgotności gleby</a></h4>
-                                <p class="card-text">Czujnik służący do wyznaczania poziomu wilgotności gleby. Zasilany
-                                    jest napięciem od 3,3 V do 5 V. Posiada wyjście cyfrowe oraz analogowe, co czyni go
-                                    kompatybilnym z większością modułów uruchomieniowych w tym Arduino. </p>
-                            </div>
-                            <div class="card-footer"><a class="btn btn-primary btn-sm"
-                                    href="https://www.w3schools.com/html/">Zobacz</a>
+                            <div class="card-footer"><a class="btn btn-primary btn-sm" href="./wpisy.html">Zobacz</a>
                             </div>
                         </div>
                     </div>
@@ -179,8 +216,6 @@
     <!-- Bootstrap core JS-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
 </body>
 
 </html>

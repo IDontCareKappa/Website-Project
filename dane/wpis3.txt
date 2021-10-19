@@ -1,0 +1,25 @@
+<div>
+	<div class="card-body">
+		<h2 class="card-title text-primary">Czujnik temperatury i ciśnienia GY-68 BMP180</h2>
+		<p class="card-text">BMP180 to cyfrowy pomiar ciśnienia i temperatury. 
+		Układ służy do pomiaru ciśnienia bezwzględnego oraz temperatury.
+		Jest to uniwersalny czujnik ciśnienia ze zwiększoną dokładnością pomiaru.
+		Sygnał wyjściowy to I2C, który umożliwia łatwe podłączenie do płytek Arduino lub Raspberry Pi.
+		Łatwo można go wykorzystac do pomiaru wysokosci położenia poprzez zmianę ciśnienia atmosferycznego.
+		Czujnik można podłączyć z dowolnym zestawem uruchomieniowym np. Arduino, lub minikomputerem Raspberry Pi.</p>
+		<img class="card-img-top" src="./assets/Products/Czujnik_temp.jpg" alt="..." />
+		<h3 class="card-title text-center text-primary mt-5">Specyfikacja</h3>
+        <div class="list-group">
+            <p class="list-group-item text-white" style="background-color:#5f6973">Napięcie zasilania: od 1,8 do 3,6 V</p>
+            <p class="list-group-item text-white" style="background-color:#5f6973">Średni pobór prądu: 0,5 uA</p>
+            <p class="list-group-item text-white" style="background-color:#5f6973">Zakres pomiaru ciśnienia: 300 - 1100hPa</p>
+			<p class="list-group-item text-white" style="background-color:#5f6973">Wyjście: Interfeis I2C</p>
+			<p class="list-group-item text-white" style="background-color:#5f6973">Szum pomiaru Maks prędkości magistrali I2C: 3,5Mhz</p>
+			<p class="list-group-item text-white" style="background-color:#5f6973">Wymiary: 13x10 mm</p>
+			<p class="list-group-item text-white" style="background-color:#5f6973">Złącze raster 2.54mm - bez pinów</p>
+        </div>
+	</div>
+	<div class="card-footer"><a class="btn btn-primary btn-sm w-100"
+		href="./wpisy.html">Pokaż wszystkie wpisy</a>
+	</div>
+</div>

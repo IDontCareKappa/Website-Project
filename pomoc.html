@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Circuit Blog - Pomoc</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/arduinoicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="./js/walidacja.js"></script>
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">Circuit Blog - Baza wiedzy o Arduino</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Strona Główna</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./wpisy.html">Wpisy</a></li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./pomoc.html">
+                            Pomoc
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Content-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 mb-5">
+                <div class="card h-100 my-4">
+                    <div class="card-body">
+                        <h2 class="card-title text-center text-primary">Kategorie</h2>
+                        <div class="list-group">
+                            <a class="list-group-item text-white"
+                                href="./wpisyarduino.html"
+                                style="background-color:#5f6973">Arduino</a>
+                            <a class="list-group-item text-white" href="./wpisyczujniki.html"
+                                style="background-color:#5f6973">Czujniki</a>
+                        </div>
+                        <div class="carousel slide mt-5" id="carouselExampleIndicators" data-ride="carousel">
+                            <ol class="carousel-indicators mb-4">
+                                <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <h5 class="text-center">Polecany produkt</h5>
+                                    <img class="img-fluid" src="./assets/Products/Arduino_aside.png" alt="">
+                                    <p class="text-center">Arduino Nano</p>
+                                    <div class="text-center"><a class="btn btn-primary btn-sm"
+                                            href="https://botland.com.pl/arduino-seria-nano-oryginalne-plytki/12960-arduino-nano-a000005-7630049200173.html">Sprawdź
+                                            cenę</a></div>
+                                </div>
+                                <div class="carousel-item">
+                                    <h5 class="text-center">Polecane środowisko</h5>
+                                    <img class="img-fluid" src="./assets/Arduino-IDE.png" alt="">
+                                    <p class="text-center">Arduino IDE</p>
+                                    <div class="text-center"><a class="btn btn-primary btn-sm"
+                                            href="https://www.arduino.cc/en/software">Sprawdź IDE</a></div>
+                                </div>
+                                <div class="carousel-item">
+                                    <h5 class="text-center">Polecany sklep</h5>
+                                    <img class="img-fluid" src="./assets/Bootland.png" alt="">
+                                    <p class="text-center">Bootland</p>
+                                    <div class="text-center"><a class="btn btn-primary btn-sm"
+                                            href="https://botland.com.pl">Sprawdź ofertę</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="card-title text-center text-primary mt-5">Linki</h2>
+                        <div class="list-group text-center">
+                            <a class="list-group-item text-light"
+                                href="https://github.com"
+                                style="background-color:#5f6973"><img src="./assets/icons/github.png" alt="github">Github</a>
+                            <a class="list-group-item text-white" href="https://www.facebook.com"
+                                style="background-color:#5f6973"><img src="./assets/icons/facebook.png" alt="github">Facebook</a>
+                            <a class="list-group-item text-white" href="https://www.instagram.com"
+                                style="background-color:#5f6973"><img src="./assets/icons/instagram.png" alt="github">Instagram</a>
+                            <a class="list-group-item text-white" href="https://twitter.com"
+                                style="background-color:#5f6973"><img src="./assets/icons/twitter.png" alt="github">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-9 my-4">
+                <div class="card h-100 ">
+                    <div class="card-body">
+                        <h2 class="card-title text-center">Potrzebujesz pomocy z arudino?</h2>
+                        <h3 class="text-center">Napisz do nas!</h3>
+                        <p class="d-inline">Pola oznaczone </p>
+                        <p class="d-inline text-info h5">*</p>
+                        <p class="d-inline"> są wymagane</p>
+                        <form method="post" action="mailto:xxx@xxx.xx" onsubmit="return sprawdz()">
+                            <div class="form-group my-4 border border-primary rounded p-2" id="emailDiv">
+                                <label class="h5" for="inputEmail">Email</label>
+                                <p class="d-inline text-info h5"> *</p>
+                                <input type="text" class="form-control" id="inputEmail" placeholder="Wpisz email"
+                                    oninput="checkInputEmail()">
+                                <small id="emailHelp" class="form-text text-muted">Twój email nie będzie
+                                    udostępniany stronom trzecim</small>
+                                <div class="d-none invalid-feedback" id="emailError">Błędny adres email</div>
+                                <div class="d-none valid-feedback" id="emailOk">Poprawny email</div>
+                            </div>
+                            <div class="form-group border border-primary rounded p-2" id="imieDiv">
+                                <label class="h5" for="inputName">Imie</label>
+                                <p class="d-inline text-info h5"> *</p>
+                                <input type="text" class="form-control" id="inputName" placeholder="Wpisz imie"
+                                    oninput="checkInputName()">
+                                <div class="d-none invalid-feedback" id="imieError">Błędne imie</div>
+                                <div class="d-none valid-feedback" id="imieOk">Poprawne imie</div>
+                            </div>
+                            <div class="form-group border border-primary rounded p-2" id="nazwDiv">
+                                <label class="h5" for="inputLastName">Nazwisko</label>
+                                <p class="d-inline text-info h5"> *</p>
+                                <input type="text" class="form-control" id="inputLastName" placeholder="Wpisz nazwisko"
+                                    oninput="checkInputLastName()">
+                                <div class="d-none invalid-feedback" id="nazwError">Błędne nazwisko</div>
+                                <div class="d-none valid-feedback" id="nazwOk">Poprawne nazwisko</div>
+                            </div>
+                            <div class="form-group border border-primary rounded p-2" id="telDiv">
+                                <label class="h5" for="inputTel">Telefon</label>
+                                <p class="d-inline text-info h5"> *</p>
+                                <input type="text" class="form-control" id="inputTel"
+                                    placeholder="Wpisz telefon (przykład 606959543)" oninput="checkInputTel()">
+                                <div class="d-none invalid-feedback" id="telError">Błędny numer telefonu</div>
+                                <div class="d-none valid-feedback" id="telOk">Poprawny numer telefonu</div>
+                            </div>
+                            <div class="form-group border border-primary rounded p-2" id="krajDiv">
+                                <label class="h5" for="kraj">Kraj</label>
+                                <p class="d-inline text-info h5"> *</p>
+                                <select multiple class="form-control" id="kraj" onchange="checkCountry()">
+                                    <option>Polska</option>
+                                    <option>Wielka Brytania</option>
+                                    <option>Niemcy</option>
+                                    <option>Rosja</option>
+                                    <option>Francja</option>
+                                </select>
+                                <div class="d-none invalid-feedback" id="krajError">Wybierz kraj</div>
+                                <div class="d-none valid-feedback" id="krajOk">Wybrano poprawnie kraj</div>
+                            </div>
+
+                            <!--Checkboxy-->
+                            <div class="form-group border border-primary rounded p-2" id="checkboxDiv">
+                                <div class="d-block">
+                                    <label class="h5">W jakiej dziedzinie potrzebujesz pomocy?</label>
+                                    <p class="d-inline text-info h5"> *</p>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="Checkbox1" value="Arduino"
+                                        name="dziedzina" onchange="checkField()">
+                                    <label class="form-check-label" for="Checkbox1">Arduino</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="Checkbox2" value="Czujniki"
+                                        name="dziedzina" onchange="checkField()">
+                                    <label class="form-check-label" for="Checkbox2">Czujniki</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="Checkbox3" value="Programowanie"
+                                        name="dziedzina" onchange="checkField()">
+                                    <label class="form-check-label" for="Checkbox3">Programowanie</label>
+                                </div>
+                                <div class="d-none invalid-feedback" id="checkboxError">Wybierz dziedzinę</div>
+                                <div class="d-none valid-feedback" id="checkboxOk">Poprawnie wybrano dziedzinę</div>
+                            </div>
+
+                            <!--Radio-->
+                            <div class="form-group border border-primary rounded p-2">
+                                <div class="d-block">
+                                    <label class="h5">Określ swój poziom znajomości Arduino</label>
+                                    <p class="d-inline text-info h5"> *</p>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="poziom" id="radio1" value="Słaby"
+                                        onchange="checkLevel()">
+                                    <label class="form-check-label" for="radio1">Słaby</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="poziom" id="radio2" value="Średni"
+                                        onchange="checkLevel()">
+                                    <label class="form-check-label" for="radio2">Średni</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="poziom" id="radio3" value="Dobry"
+                                        onchange="checkLevel()">
+                                    <label class="form-check-label" for="radio3">Dobry</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="poziom" id="radio4"
+                                        value="Bardzo Dobry" onchange="checkLevel()">
+                                    <label class="form-check-label" for="radio3">Bardzo Dobry</label>
+                                </div>
+                                <div class="d-none invalid-feedback" id="radioError">Wybierz Poziom</div>
+                                <div class="d-none valid-feedback" id="radioOk">Poprawnie wybrano poziom</div>
+                            </div>
+                            
+
+                            <!--Textarea-->
+                            <div class="form-group mt-4 border border-primary rounded p-2">
+                                <label class="h5" for="text">Opisz nam swój problem</label>
+                                <p class="d-inline text-info h5"> *</p>
+                                <textarea class="form-control" id="text" rows="3" oninput="checkText()"></textarea>
+                                <div class="d-none invalid-feedback" id="textError">Wpisz wiadomość którą chcesz
+                                    wysłać</div>
+                                <div class="d-none valid-feedback" id="textOk">Poprawnie wpisano wiadomość</div>
+                            </div>
+                            <input type="submit" class="btn btn-success d-inline mt-5">
+                            <div id="wczytajDane" class="w-50 mt-3 float-right d-inline text-center">
+                                <button type="button" id="zapisz"
+                                    class="btn btn-primary mt-5 float-right">Zapisz dane osobowe</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!--Popup-->
+                    <div class="d-none" id="popup">
+                        <div class="card bg-info ">
+                            <div class="card-body">
+                                <h2 class="text-center text-dark">Edytuj dane</h2>
+                                <form onsubmit="return zapiszEdytowane()">
+                                    <div class="form-group my-4">
+                                        <label class="h5 text-dark" for="popupEmail">Email</label>
+                                        <p class="d-inline text-info h5"> *</p>
+                                        <input type="text" class="form-control" id="popupEmail"
+                                            placeholder="Wpisz email" oninput="checkPopupEmail()">
+                                        <small id="emailPopupHelp" class="form-text text-muted">Twój email nie będzie
+                                            udostępniany stronom trzecim</small>
+                                        <div class="d-none invalid-feedback" id="emailPopupError">Błędny adres email</div>
+                                        <div class="d-none valid-feedback" id="emailPopupOk">Poprawny email</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="h5 text-dark" for="popupName">Imie</label>
+                                        <p class="d-inline text-info h5"> *</p>
+                                        <input type="text" class="form-control" id="popupName" placeholder="Wpisz imie"
+                                            oninput="checkPopupName()">
+                                        <div class="d-none invalid-feedback" id="imiePopupError">Błędne imie</div>
+                                        <div class="d-none valid-feedback" id="imiePopupOk">Poprawne imie</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="h5 text-dark" for="popupLastName">Nazwisko</label>
+                                        <p class="d-inline text-info h5"> *</p>
+                                        <input type="text" class="form-control" id="popupLastName"
+                                            placeholder="Wpisz nazwisko" oninput="checkPopupLastName()">
+                                        <div class="d-none invalid-feedback" id="nazwPopupError">Błędne nazwisko</div>
+                                        <div class="d-none valid-feedback" id="nazwPopupOk">Poprawne nazwisko</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="h5 text-dark" for="popupTel">Telefon</label>
+                                        <p class="d-inline text-info h5"> *</p>
+                                        <input type="text" class="form-control" id="popupTel"
+                                            placeholder="Wpisz telefon (przykład 606959543)" oninput="return checkPopupTel()">
+                                        <div class="d-none invalid-feedback" id="telPopupError">Błędny numer telefonu</div>
+                                        <div class="d-none valid-feedback" id="telPopupOk">Poprawny numer telefonu</div>
+                                    </div>
+                                    <button type="submit" class="btn btn-success d-inline mt-5">Zapisz</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Tomasz Ostrowski</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

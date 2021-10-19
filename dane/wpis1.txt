@@ -1,0 +1,27 @@
+<div>
+	<div class="card-body">
+		<h2 class="card-title"><a href="#!">Arduino Nano</a></h2>
+		<p class="card-text">Moduł Arduino Nano z mikrokontrolerem AVR ATmega328. 
+		Wyposażony w 32kB pamięci Flash, 2kB RAM, 22 cyfrowe wejścia/wyjścia. 
+		Charakteryzuje się niewielkim rozmiarem. Arduino Nano to popularna wersja 
+		Uno w mniejszym rozmiarze: 45 x 18 mm. Płytka zawiera mikrokontroler ATmega328 
+		wyposażony w 22 cyfrowe wejścia/wyjścia z czego 6 można wykorzystać jako wyjścia 
+		PWM (np. do sterowania silnikami) oraz 8 jako wejścia analogowe. Układ taktowany 
+		jest sygnałem zegarowym o częstotliwości 16 MHz</p>
+		<img class="card-img-top" src="./assets/Products/Arduino_nano.jpg" alt="..." />
+		<h3 class="card-title text-center text-primary mt-5">Specyfikacja</h3>
+        <div class="list-group">
+            <p class="list-group-item text-white" style="background-color:#5f6973">Napięcie zasilania: od 6V do 20V</p>
+            <p class="list-group-item text-white" style="background-color:#5f6973">Mikrokontroler: ATmega328</p>
+            <p class="list-group-item text-white" style="background-color:#5f6973">Porty I/O: 22</p>
+			<p class="list-group-item text-white" style="background-color:#5f6973">Wyjścia PWM: 6</p>
+			<p class="list-group-item text-white" style="background-color:#5f6973">Wejścia analogowe: 8</p>
+			<p class="list-group-item text-white" style="background-color:#5f6973">Interfejsy szeregowe: UART, SPI, I2C</p>
+			<p class="list-group-item text-white" style="background-color:#5f6973">Zewnętrzne przerwania</p>
+			<p class="list-group-item text-white" style="background-color:#5f6973">Gniazdo miniUSB do programowania</p>
+        </div>
+	</div>
+	<div class="card-footer"><a class="btn btn-primary btn-sm w-100"
+		href="./wpisy.html">Pokaż wszystkie wpisy</a>
+	</div>
+</div>

@@ -1,0 +1,24 @@
+<div>
+	<div class="card-body">
+		<h2 class="card-title text-primary">Czujnik płomieni Waveshare 9521</h2>
+		<p class="card-text">Czujnik służący do wykrywania ognia. Zasilany jest 
+		napięciem od 3,3 V do 5,3 V. Zakres wykrywanej fali: od 760 nm do 1100 nm. 
+		Wyjściem jest napięcie analogowe oraz sygnał cyfowy. Urządzenie pracuje w 
+		temperaturach od -25 °C do 85 °C. Czujnik posiada wyjście analogowe, które 
+		należy podłączyć do wyprowadzenia przetwornika A/C (wejścia analogowego w Arduino). 
+		Posiada również wyjście cyfrowe, którego poziom czułości można ustawić za pomocą 
+		wbudowanego potencjometru.</p>
+		<img class="card-img-top" src="./assets/Products/Czujnik_ognia.jpg" alt="..." />
+		<h3 class="card-title text-center text-primary mt-5">Specyfikacja</h3>
+        <div class="list-group">
+            <p class="list-group-item text-white" style="background-color:#5f6973">Napięcie zasilania: od 3,3V do 5,3V</p>
+            <p class="list-group-item text-white" style="background-color:#5f6973">Zakres wykrywanej fali: od 760 do 1100 nm</p>
+            <p class="list-group-item text-white" style="background-color:#5f6973">Kąt detekcji: od 0 do 60 °</p>
+			<p class="list-group-item text-white" style="background-color:#5f6973">Temperatura pracy: od -25 do 85 °C</p>
+			<p class="list-group-item text-white" style="background-color:#5f6973">Wymiary modułu: 27,3 x 15,4 mm</p>
+        </div>
+	</div>
+	<div class="card-footer"><a class="btn btn-primary btn-sm w-100"
+		href="./wpisy.html">Pokaż wszystkie wpisy</a>
+	</div>
+</div>
