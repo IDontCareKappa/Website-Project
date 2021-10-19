@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     var but0 = document.getElementById("b0");
     but0.addEventListener('click', function () {
-        fetch("https://idontcarekappa.github.io/IDontCareKappa/dane/wpis0.txt")
+        fetch("https://idontcarekappa.github.io/Website-Project/dane/wpis0.txt")
             .then(response => { return response.text(); })
             .then(dane => { document.getElementById("wpisy").innerHTML = dane; });
     },
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var but1 = document.getElementById("b1");
     but1.addEventListener('click', function () {
-        fetch("https://idontcarekappa.github.io/IDontCareKappa/dane/wpis1.txt")
+        fetch("https://idontcarekappa.github.io/Website-Project/dane/wpis1.txt")
             .then(response => { return response.text(); })
             .then(dane => { document.getElementById("wpisy").innerHTML = dane; });
     },
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var but2 = document.getElementById("b2");
     but2.addEventListener('click', function () {
-        fetch("https://idontcarekappa.github.io/IDontCareKappa/dane/wpis2.txt")
+        fetch("https://idontcarekappa.github.io/Website-Project/dane/wpis2.txt")
             .then(response => { return response.text(); })
             .then(dane => { document.getElementById("wpisy").innerHTML = dane; });
     },
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var but3 = document.getElementById("b3");
     but3.addEventListener('click', function () {
-        fetch("https://idontcarekappa.github.io/IDontCareKappa/dane/wpis3.txt")
+        fetch("https://idontcarekappa.github.io/Website-Project/dane/wpis3.txt")
             .then(response => { return response.text(); })
             .then(dane => { document.getElementById("wpisy").innerHTML = dane; });
     },
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var but4 = document.getElementById("b4");
     but4.addEventListener('click', function () {
-        fetch("https://idontcarekappa.github.io/IDontCareKappa/dane/wpis4.txt")
+        fetch("https://idontcarekappa.github.io/Website-Project/dane/wpis4.txt")
             .then(response => { return response.text(); })
             .then(dane => { document.getElementById("wpisy").innerHTML = dane; });
     },
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var but5 = document.getElementById("b5");
     but5.addEventListener('click', function () {
-        fetch("https://idontcarekappa.github.io/IDontCareKappa/dane/wpis5.txt")
+        fetch("https://idontcarekappa.github.io/Website-Project/dane/wpis5.txt")
             .then(response => { return response.text(); })
             .then(dane => { document.getElementById("wpisy").innerHTML = dane; });
     },
